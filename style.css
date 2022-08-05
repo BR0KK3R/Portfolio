@@ -1,3 +1,7 @@
+*{
+    font-family: 'Roboto', Inter;
+}
+
 body{
     background-color: #061629;
     margin: 0;
