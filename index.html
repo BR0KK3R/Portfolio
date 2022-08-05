@@ -1,12 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://kit.fontawesome.com/54ba1c1b0c.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Brokker's Portfolio</title>
 </head>
 <body>
-    <h1>Welcome!</h1>
+    <!-- Landing Page -->
+    <div class="page" id="landing">
+        <div class="left">
+            <div class="landing-text">
+                <h1>Hi, I'm Kacper.</h1>
+                <h2>I love programming.</h2>
+                <h4>I'm 16 y.o. programmer from Poland. I love learning new programming skills</h4>
+            </div>
+            <div class="landing-buttons">
+                <button type="button" class="main-button" onclick="contact()">Work with me</button>
+                <button type="button" class="link-button" onclick="about()">About me</button>
+            </div>
+        </div>
+        <div class="right">
+            <img class="landing-img" src="img/desk.svg">
+        </div>
+    </div>
+    <!-- About me Page -->
+    <div class="page" id="about">
+        <div class="page-header">
+            <i class="fa-solid fa-id-card" style="color: #ffffff; font-size: 64px"></i>
+            <h3 style="color: #ffffff; margin: 0;">About Me</h3>
+            <h4>Everything you have to know about me</h4>
+        </div>
+        <div class="left" style="width: 30%;">
+            <div class="about-memoji">
+                <div class="about-memoji">
+                    <img src="img/Profilowe.png" height="440px" style="z-index: 2; position: absolute;" mask="#memoji-mask">
+                    <svg height="440" width="440" style="z-index: 1">
+                        <ellipse cx="220" cy="300" rx="200" ry="125" style="fill:#31465F; border-bottom: 10px solid red"></ellipse>
+                    </svg>
+                </div>
+                <center><button style="margin-top: 15px; border: 3px solid #314D6F; border-radius: 15px; padding: 10px;" type="button" class="link-button" onclick="projects()">My Projects</button>
+            </div>
+        </div>
+        <div class="right" style="width: 70%;">
+            <center>
+                <div class="about-content">
+                    <p> I'm 16 y.o. programmer from small city in Poland.
+                        My adventure with programming started when I was about 11 years old.
+                        2 years ago I started learning programming seriously.
+                        I quickly gain new programing skills, that's why I am able to find myself in many areas of programming.
+                    </p>
+                </div>
+            </center>
+        </div>
+    </div>
+    <!-- Projects Page -->
+    <div class="page" id="projects">
+        <div class="page-header">
+            <i class="fa-solid fa-code" style="color: #ffffff; font-size: 64px"></i>
+            <h3 style="color: #ffffff; margin: 0;">Projects</h3>
+            <h4>Few projects I have made</h4>
+        </div>
+        <div class="project" style="margin-left: 12.5px;">
+
+        </div>
+        <div class="project">
+
+        </div>
+        <div class="project">
+
+        </div>
+        <center>
+            <p>More projects on my <a href="https://github.com/BR0KK3R" target="_blank">GitHub</a></p>
+            <center><button style="margin-top: 15px; border: 3px solid #314D6F; border-radius: 15px; padding: 10px;" type="button" class="link-button" onclick="skills()">My Skills</button>
+        </center>
+    </div>
+    <!-- Skills Page -->
+    <div class="page" id="skills">
+        <div class="page-header">
+            <i class="fa-solid fa-microchip" style="color: #ffffff; font-size: 64px"></i>
+            <h3 style="color: #ffffff; margin: 0;">Skills</h3>
+            <h4>Skills and technologies i use</h4>
+        </div>
+    </div>
+    <!-- Contact Page -->
+    <div class="page" id="contact">
+        <div class="page-header">
+            <i class="fa-solid fa-user" style="color: #ffffff; font-size: 64px"></i>
+            <h3 style="color: #ffffff; margin: 0;">Contact & Social Media</h3>
+            <h4>Contact me via social media or e-mail</h4>
+        </div>
+        <center>
+        <div class="social-media-panel">
+            <div class="social-media" id="Discord" onclick="openInNewTab('https://discord.com/users/Brokker#4564')">
+
+            </div>
+            <div class="social-media" id="Youtube" onclick="openInNewTab('https://www.youtube.com/channel/UCENNNQhR6O3jlSvx4RfneVw')">
+                
+            </div>
+            <div class="social-media" id="Twitter" onclick="openInNewTab('https://twitter.com/Brokker_')">
+                
+            </div>
+            <div class="social-media" id="Twitch" onclick="openInNewTab('https://www.twitch.tv/br0kk3r')">
+                
+            </div>
+            <div class="social-media" id="GitHub" onclick="openInNewTab('https://github.com/BR0KK3R')">
+                
+            </div>
+        </div>
+        </center>
+        <img height="200px" class="landing-img" src="img/bird.svg" id="bird-img">
+    </div>
+
+<script src="script.js"></script>
 </body>
 </html>
